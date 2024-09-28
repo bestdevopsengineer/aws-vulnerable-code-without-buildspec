@@ -1,5 +1,9 @@
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+      java: latest
   build:
     commands:
-      - mvn verify sonar:sonar -Dsonar.projectKey=aws_new  -Dsonar.organization=aws_new -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=129287299e717638c401789025bcb4397807d312 
+      - mvn verify sonar:sonar -Dsonar.projectKey=aws_new -Dsonar.organization=aws_new -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=129287299e717638c401789025bcb4397807d312 
+      
